@@ -1,23 +1,36 @@
 {
   "name": "aud-sticky",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.12",
+  "private": false,
+  "author": "reynaldoq@gmail.com",
+  "main": "dist/aud-sticky.umd.js",
+  "unpkg": "dist/aud-sticky.umd.min.js",
+  "keywords": [
+    "front-end",
+    "web",
+    "vue",
+    "vuejs",
+    "sticky",
+    "sticky-player",
+    "aud"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build:npm": "vue-cli-service build --target lib --name aud-sticky src/index.js"
   },
-  "dependencies": {
-    "core-js": "^3.3.2",
-    "vue": "^2.6.10"
-  },
+  "license": "MIT",
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.0",
     "@vue/cli-plugin-eslint": "^4.0.0",
     "@vue/cli-service": "^4.0.0",
     "babel-eslint": "^10.0.3",
+    "core-js": "^3.3.2",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "vue": "^2.6.10",
     "vue-template-compiler": "^2.6.10"
-  }
+  },
+  "files": ["dist"]
 }
